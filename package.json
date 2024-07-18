@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --output-hashing=none --configuration production",
-    "package": "cat dist/pdf-viewer/browser/{runtime,polyfills,main}.js > dist/pdf-viewer/component-lib.js",
+    "package": "mv dist/pdf-viewer/browser/polyfills.js dist/pdf-viewer/browser/pdf-polyfills.js && mv dist/pdf-viewer/browser/main.js dist/pdf-viewer/browser/pdf-main.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
